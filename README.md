@@ -1,6 +1,6 @@
 # Instance Credibility Inference for Few-Shot Learning
 
-\[[paper](https://arxiv.org/pdf/2003.11853.pdf)\]\[[intro](https://yikai-wang.github.io/projects/wang2020instance/intro.html)\]\[[中文介绍](https://zhuanlan.zhihu.com/p/120354934)\]
+\[[paper](https://arxiv.org/pdf/2003.11853.pdf)\]\[[intro](https://yikai-wang.github.io/ici)\]\[[中文介绍](https://zhuanlan.zhihu.com/p/120354934)\]
 
 This repository contains the code for our paper "Instance Credibility Inference for Few-Shot Learning". 
 
