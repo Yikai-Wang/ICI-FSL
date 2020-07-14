@@ -69,6 +69,14 @@ Set the number of ways, use:
 
 For all the options, please check the *config.py*.
 
+## FAQs
+
+*How to create the csv files?*
+
+In the csv file, each line is related to one image where the first column is the path and the second column is the category/label. You may check/modify the following code:
+
+https://github.com/Yikai-Wang/ICI-FSL/blob/0d6a3e5b3403a8a3d8f22b04f91406fa4650fd97/datasets.py#L19-L35
+
 ## Citation
 
 If you found the provided code useful, please cite our work.
