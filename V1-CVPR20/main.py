@@ -19,12 +19,7 @@ def train_embedding(args):
     setup_seed(2333)
     ckpt_root = os.path.join('./ckpt', args.dataset)
     os.makedirs(ckpt_root, exist_ok=True)
-    if args.dataset == 'miniimagenet':
-        data_root = os.path.join(args.folder, 'miniimagenet/images-lc/')
-    elif args.dataset == 'tieredimagenet':
-        data_root = os.path.join(args.folder, 'tieredimagenet-new/tiered_imagenet/')
-    else:
-        data_root = os.path.join(args.folder, args.dataset)
+    data_root = os.path.join(args.folder, args.dataset)
     from datasets import EmbeddingDataset
     source_set = EmbeddingDataset(data_root, args.img_size, 'train')
     source_loader = DataLoader(
@@ -101,12 +96,7 @@ def test(args):
     ici = ICI(classifier=args.classifier, num_class=args.num_test_ways,
               step=args.step, reduce=args.embed, d=args.dim)
 
-    if args.dataset == 'miniimagenet':
-        data_root = os.path.join(args.folder, 'miniimagenet/images-lc/')
-    elif args.dataset == 'tieredimagenet':
-        data_root = os.path.join(args.folder, 'tieredimagenet-new/tiered_imagenet/')
-    else:
-        data_root = os.path.join(args.folder, args.dataset)
+    data_root = os.path.join(args.folder, args.dataset)
     dataset = DataSet(data_root, 'test', args.img_size)
     sampler = CategoriesSampler(dataset.label, args.num_batches,
                                 args.num_test_ways, (args.num_shots, 15, args.unlabel))

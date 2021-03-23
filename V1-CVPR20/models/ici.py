@@ -88,11 +88,11 @@ class ICI(object):
 
     def initial_embed(self, reduce, d):
         reduce = reduce.lower()
-        assert reduce in ['isomap', 'itsa', 'mds', 'lle', 'se', 'pca', 'none']
+        assert reduce in ['isomap', 'ltsa', 'mds', 'lle', 'se', 'pca', 'none']
         if reduce == 'isomap':
             from sklearn.manifold import Isomap
             embed = Isomap(n_components=d)
-        elif reduce == 'itsa':
+        elif reduce == 'ltsa':
             from sklearn.manifold import LocallyLinearEmbedding
             embed = LocallyLinearEmbedding(n_components=d,
                                            n_neighbors=5, method='ltsa')
