@@ -69,11 +69,11 @@ This code is based on [CAN](https://github.com/blue-blue272/fewshot-CAN) and [Me
 If you found the provided code useful, please cite our work.
 
 ```
-@article{wang2020trust,
-  title={How to trust unlabeled data? Instance Credibility Inference for Few-Shot Learning},
+@article{wang2021trust,
+  title={How to Trust Unlabeled Data? Instance Credibility Inference for Few-Shot Learning},
   author={Wang, Yikai and Zhang, Li and Yao, Yuan and Fu, Yanwei},
-  journal={arXiv preprint arXiv:2007.08461},
-  year={2020}
-}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2021},
+  doi={10.1109/TPAMI.2021.3086140}}
 ```
 
